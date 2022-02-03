@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hotel App</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plusSymbol">+</string>
+    <string name="minusSymbol">-</string>
+    <string name="total_rooms">Total Rooms: </string>
+    <string name="total_guests">"Total Guests: </string>
+    <string name="jacuzzi">Jacuzzi</string>
+    <string name="swimming">Swimming</string>
+    <string name="meals">Meals</string>
+    <string name="book">Book</string>
+    <string name="draft_book">Draft Book</string>
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="dollar_symbol">\u0024</string>
+    <string name="SP_HOTEL_KEY">hotel</string>
+    <string name="client_id">AcJ6ioC9RghlzA9yainAXXK3txejXIWIgDuchwLmUbgMYxUX6L1f4NJ4fCeVxQ1fHGup-M4powhOGzxO</string>
+</resources>

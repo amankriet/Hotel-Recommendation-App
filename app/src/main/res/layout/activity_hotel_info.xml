@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hotel_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.turquoise.hotelbookrecommendation.Activities.HotelInfo">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/hotelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutExpandedTextStyle"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+            <ImageView
+                android:id="@+id/hotelImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:id="@+id/toolbarInfo"
+
+                app:popupTheme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+                android:layout_height="?actionBarSize"
+                app:titleTextColor="@android:color/black"
+                app:layout_collapseMode="pin" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="monospace"
+                    android:id="@+id/views"
+                    android:gravity="center"
+                    android:text="views"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="drafts"
+                    android:id="@+id/draftText"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="completed"
+                    android:id="@+id/completedText"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/horizontal_line"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appbar"
+                android:padding="15dp"
+                android:id="@+id/hotelDesc"
+                android:gravity="center|clip_horizontal"
+                android:text="hhjhj"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2.4"
+            android:paddingHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/jacuzziBtn"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/jacuzzi"
+                android:layout_weight="0.8"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/custom_btn_unchecked"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/swimmingBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/swimming"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/custom_btn_unchecked"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mealsBtn"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/meals"
+                android:layout_weight="0.6"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/custom_btn_unchecked"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:fontFamily="monospace"
+                android:gravity="left|center"
+                android:text="@string/total_guests"
+                android:id="@+id/totalGuestsText"
+                android:layout_weight="1.4"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/incrementGuestsBtn"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:layout_weight="0.3"
+                android:layout_marginTop="-6dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/plusSymbol"
+                android:textSize="20sp"
+                app:cornerRadius="2000dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/decrementGuestsBtn"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:layout_height="60dp"
+                android:layout_marginTop="-6dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/minusSymbol"
+                android:textSize="20sp"
+                app:cornerRadius="2000dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:fontFamily="monospace"
+                android:gravity="left|center"
+                android:text="@string/total_rooms"
+                android:id="@+id/totalRoomsText"
+                android:layout_weight="1.4"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/incrementRoomsBtn"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:layout_weight="0.3"
+                android:layout_marginTop="-6dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/plusSymbol"
+                android:textSize="20sp"
+                app:cornerRadius="2000dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/decrementRoomsBtn"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:layout_height="60dp"
+                android:layout_marginTop="-6dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/minusSymbol"
+                android:textSize="20sp"
+                app:cornerRadius="2000dp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirmBooking"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-6dp"
+            android:gravity="center"
+            android:text="@string/book"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/draftBooking"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-6dp"
+            android:gravity="center"
+            android:text="@string/draft_book"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
