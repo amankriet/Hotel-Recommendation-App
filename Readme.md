@@ -12,13 +12,15 @@
 7.  Users book a Hotel i.e. Create a completed booking
 8.  Display the activities happening around hotel page (Visits, Draft Bookings, Completed Booking)
 9.  Display recommendations of other hotels based on the activities done by the user.
-10.  Implement a basic UI with minimal functionality required.
+10. Implement a basic UI with minimal functionality required.
+11. Implement a payment module.
 
 ## App Features
-1. Shows list of hotes as structured in [HotelMock.json](https://github.com/jagzmz/HotelBookingRecomendation/blob/master/app/src/main/assets/hotels.json)
+1. Shows list of hotes as structured in [hotels.json](https://github.com/jagzmz/HotelBookingRecomendation/blob/master/app/src/main/assets/hotels.json)
 2. List of hotels shown with their ratings, tags and views.
 3. On clicking "Book"  user can create either Draft or Complete Booking.
 4. Activities including Views, Drafts, Bookings are displayed to all. 
+5. Paypal Payment module integrated with all Manifest bugs fixes for sdk 0.2.0
 
 ## Recommendation System
 Each hotel has tags attached with it. Upon successful booking of the user,
